@@ -380,8 +380,8 @@ let syscall_map = {
 };
 
 // Kernel stack offsets
-const OFFSET_KERNEL_STACK_COOKIE                = 0x0000970;
-const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x0000848;
+const OFFSET_KERNEL_STACK_COOKIE                = 0x00000930;
+const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x00000808;
 
 // Kernel text-relative offsets
 const OFFSET_KERNEL_DATA                        = 0x00C40000;
