@@ -38,9 +38,9 @@ const payload_map = [
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
-        version: "1.9b",
-        supportedFirmwares: ["3.", "4."]
+        binarySource: "https://github.com/etaHEN/etaHEN/releases/download/2.1B/etaHEN.bin",
+        version: "2.1b",
+        supportedFirmwares: ["3.", "5."]
     },
     {
         displayTitle: "etaHEN",
@@ -48,19 +48,19 @@ const payload_map = [
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        binarySource: "https://github.com/etaHEN/etaHEN/releases/download/2.1B/etaHEN.bin",
         version: "1.9b",
         supportedFirmwares: ["1.", "2."],
         toPort: 9021
     },
     {
-        displayTitle: "etaHEN2.0b",
+        displayTitle: "etaHEN2.1b",
         description: "AIO HEN",
-        fileName: "etaHEN.2.0b.bin",
+        fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
         binarySource: "- from discord",
-        version: "2.0b",
+        version: "2.1b",
         toPort: 9021
     },
     {
