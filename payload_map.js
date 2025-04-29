@@ -35,7 +35,7 @@ const payload_map = [
     {
         displayTitle: "etaHEN",
         description: "AIO HEN",
-        fileName: "etaHEN.bin",
+        fileName: "etaHEN-2.0b.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
         binarySource: "https://github.com/etaHEN/etaHEN/releases/download/2.1B/etaHEN.bin",
