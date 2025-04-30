@@ -75,14 +75,14 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "Byepervisor HEN",
+        displayTitle: "kstuff-toggle",
         description: "FPKG enabler",
-        fileName: "byepervisor.elf",
+        fileName: "kstuff-toggle.elf",
         author: "SpecterDev, ChendoChap, flatz, fail0verflow, Znullptr, kiwidog, sleirsgoevy, EchoStretch, LightningMods, BestPig, zecoxao", 
-        projectSource: "https://github.com/EchoStretch/Byepervisor",
-        binarySource: "https://github.com/EchoStretch/Byepervisor/actions/runs/12567456429",
+        projectSource: "https://github.com/EchoStretch/kstuff-toggle",
+        binarySource: "https://github.com/EchoStretch/kstuff-toggle",
         version: "47a6ae7",
-        supportedFirmwares: ["1.00", "1.01", "1.02", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "2.70"],
+        supportedFirmwares: ["1.00", "1.01", "1.02", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "5.50"],
         toPort: 9021
     },
     {
