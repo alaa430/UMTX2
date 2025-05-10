@@ -177,12 +177,12 @@ const payload_map = [
         supportedFirmwares: ["1.", "2.", "3.", "4."]
     },
     {
-        displayTitle: "ps5-remoteplay-get-pin",
+        displayTitle: "ps5-webkit-cache-remover",
         description: "Get Remote Play PIN for offline activated users. Send again to cancel.",
-        fileName: "rp-get-pin.elf",
+        fileName: "ps5-webkit-cache-remover-v1.01",
         author: "idlesauce",
-        projectSource: "https://github.com/idlesauce/ps5-remoteplay-get-pin",
-        binarySource: "https://github.com/idlesauce/ps5-remoteplay-get-pin/releases/tag/v0.1.1",
+        projectSource: "https://github.com/vladimir-cucu/ps5-webkit-cache-remover/releases/download/v1.01/ps5-webkit-cache-remover-v1.01.elf",
+        binarySource: "hhttps://github.com/vladimir-cucu/ps5-webkit-cache-remover/releases",
         version: "0.1.1",
         toPort: 9021
     },
