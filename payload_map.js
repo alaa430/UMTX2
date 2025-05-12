@@ -43,14 +43,12 @@ const payload_map = [
         supportedFirmwares: ["3.", "4."]
     },
     {
-        displayTitle: "etaHEN",
-        description: "AIO HEN",
-        fileName: "etaHEN.bin",
-        author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
-        projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/etaHEN/etaHEN/releases/download/2.1B/etaHEN.bin",
-        version: "1.9b",
-        supportedFirmwares: ["1.", "2."],
+        displayTitle: "app title",
+        description: "show app title",
+        fileName: "app_title.elf",
+        author: "master_s9", 
+        version: "1.0",
+        supportedFirmwares: ["3.", "4.", "5."],
         toPort: 9021
     },
     {
