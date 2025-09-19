@@ -51,11 +51,11 @@ let wk_gadgetmap = {
 };
 
 let syscall_map = {
-	0x001: 0x00031A7A, // sys_exit
+	0x001: 0x00034F5A, // sys_exit
 	0x002: 0x00036900, // sys_fork
 	0x003: 0x00034B20, // sys_read
 	0x004: 0x00034A80, // sys_write
-	0x005: 0x00031C40, // sys_open
+	0x005: 0x00035120, // sys_open
 	0x006: 0x00035750, // sys_close
 	0x007: 0x00034340, // sys_wait4
 	0x00A: 0x00036440, // sys_unlink
@@ -86,7 +86,7 @@ let syscall_map = {
 	0x032: 0x00035EB0, // sys_setlogin
 	0x035: 0x00034860, // sys_sigaltstack
 	0x036: 0x000349C0, // sys_ioctl
-	0x037: 0x00032790, // sys_reboot
+	0x037: 0x00035C90, // sys_reboot
 	0x038: 0x00035B90, // sys_revoke
 	0x03B: 0x000353ED, // sys_execve
 	0x041: 0x00035830, // sys_msync
@@ -319,17 +319,17 @@ let syscall_map = {
 	0x27E: 0x00034E80, // sys_utc_to_localtime
 	0x27F: 0x00036CB0, // sys_localtime_to_utc
 	0x280: 0x00035E30, // sys_set_uevt
-	0x281: 0x000314A0, // sys_get_cpu_usage_proc
-	0x282: 0x00031D20, // sys_get_map_statistics
+	0x281: 0x000349A0, // sys_get_cpu_usage_proc
+	0x282: 0x00035220, // sys_get_map_statistics
 	0x283: 0x00035FC0, // sys_set_chicken_switches
 	0x286: 0x000368E0, // sys_get_kernel_mem_statistics
 	0x287: 0x00035AF0, // sys_get_sdk_compiled_version
 	0x288: 0x00034460, // sys_app_state_change
 	0x289: 0x00036680, // sys_dynlib_get_obj_member
 	0x28C: 0x00034500, // sys_process_terminate
-	0x28D: 0x000317E0, // sys_blockpool_open
-	0x28E: 0x00031560, // sys_blockpool_map
-	0x28F: 0x00032FC0, // sys_blockpool_unmap
+	0x28D: 0x00034CC0, // sys_blockpool_open
+	0x28E: 0x00034A60, // sys_blockpool_map
+	0x28F: 0x000364A0, // sys_blockpool_unmap
 	0x290: 0x000360E0, // sys_dynlib_get_info_for_libdbg
 	0x291: 0x000351A0, // sys_blockpool_batch
 	0x292: 0x00034900, // sys_fdatasync
@@ -380,8 +380,8 @@ let syscall_map = {
 };
 
 // Kernel stack offsets
-const OFFSET_KERNEL_STACK_COOKIE                = 0x0000970;
-const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x0000848;
+const OFFSET_KERNEL_STACK_COOKIE                = 0x00000930;
+const OFFSET_KERNEL_STACK_SYS_SCHED_YIELD_RET   = 0x00000808;
 
 // Kernel text-relative offsets
 const OFFSET_KERNEL_DATA                        = 0x00C40000;
