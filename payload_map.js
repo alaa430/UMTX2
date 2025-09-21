@@ -26,8 +26,8 @@ const payload_map = [
     //     fileName: "elfldr.elf",
     //     author: "john-tornblom",
     //     projectSource: "https://github.com/ps5-payload-dev/elfldr",
-    //     binarySource: "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.19/Payload.zip",
-    //     version: "0.19",
+    //     binarySource: "https://github.com/ps5-payload-dev/pacbrew-repo/actions/runs/13686166926",
+    //     version: "0.18.1",
     //     supportedFirmwares: ["1.", "2.", "3.", "4.", "5."]
     // },
     // etaHEN is added twice so that on 1.xx-2.xx you can load it in webkit only mode too
@@ -35,34 +35,37 @@ const payload_map = [
     {
         displayTitle: "etaHEN",
         description: "AIO HEN",
-        fileName: "etaHEN-2.0b.bin",
+        fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "https://github.com/etaHEN/etaHEN/releases/download/2.1B/etaHEN.bin",
-        version: "2.1b",
+        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        version: "1.9b",
         supportedFirmwares: ["3.", "4."]
     },
     {
-        displayTitle: "app title",
-        description: "show app title",
-        fileName: "app_title.elf",
-        author: "master_s9", 
-        version: "1.0",
-        supportedFirmwares: ["3.", "4.", "5."],
-        toPort: 9021
-    },
-    {
-        displayTitle: "etaHEN2.2b",
+        displayTitle: "etaHEN",
         description: "AIO HEN",
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
-        binarySource: "- from discord",
-        version: "2.2b",
+        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        version: "1.9b",
+        supportedFirmwares: ["1.", "2."],
         toPort: 9021
     },
+	{
+        displayTitle: "etaHEN", 
+        description: "AIO HEN",
+        fileName: "etaHENByLM.bin",
+        author: "LightningMods",
+        projectSource: "https://github.com/LightningMods/etaHEN",
+        binarySource: "https://github.com/LightningMods/etaHEN/releases/download/1.9b/etaHEN.bin",
+        version: "2.0b",
+		supportedFirmwares: ["5."],
+		toPort: 9021
+    },
     {
-        displayTitle: "kstuff",
+        displayTitle: "ps5-kstuff",
         description: "FPKG enabler",
         fileName: "kstuff.elf",
         author: "sleirsgoevy, john-tornblom, EchoStretch, buzzer-re, BestPig, LightningMods, zecoxao",
@@ -73,14 +76,14 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "kstuff-toggle",
+        displayTitle: "Byepervisor HEN",
         description: "FPKG enabler",
-        fileName: "kstuff-toggle.elf",
+        fileName: "byepervisor.elf",
         author: "SpecterDev, ChendoChap, flatz, fail0verflow, Znullptr, kiwidog, sleirsgoevy, EchoStretch, LightningMods, BestPig, zecoxao", 
-        projectSource: "https://github.com/EchoStretch/kstuff-toggle",
-        binarySource: "https://github.com/EchoStretch/kstuff-toggle",
+        projectSource: "https://github.com/EchoStretch/Byepervisor",
+        binarySource: "https://github.com/EchoStretch/Byepervisor/actions/runs/12567456429",
         version: "47a6ae7",
-        supportedFirmwares: ["1.00", "1.01", "1.02", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "5.50"],
+        supportedFirmwares: ["1.00", "1.01", "1.02", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "2.70"],
         toPort: 9021
     },
     {
@@ -99,8 +102,8 @@ const payload_map = [
         fileName: "websrv.elf",
         author: "john-tornblom",
         projectSource: "https://github.com/ps5-payload-dev/websrv",
-        binarySource: "https://github.com/ps5-payload-dev/websrv/releases/download/v0.22/Payload.zip",
-        version: "0.22",
+        binarySource: "https://github.com/ps5-payload-dev/pacbrew-repo/actions/runs/13686166926",
+        version: "0.20",
         toPort: 9021
     },
     {
@@ -175,13 +178,13 @@ const payload_map = [
         supportedFirmwares: ["1.", "2.", "3.", "4."]
     },
     {
-        displayTitle: "ps5-webkit-cache-remover",
-        description: "ps5-webkit-cache-remover",
-        fileName: "ps5-webkit-cache-remover-v1.01",
-        author: "vladimir",
-        projectSource: "https://github.com/vladimir-cucu/ps5-webkit-cache-remover",
-        binarySource: "https://github.com/vladimir-cucu/ps5-webkit-cache-remover/releases/download/v1.01/ps5-webkit-cache-remover-v1.01.elf",
-        version: "1.0",
+        displayTitle: "ps5-remoteplay-get-pin",
+        description: "Get Remote Play PIN for offline activated users. Send again to cancel.",
+        fileName: "rp-get-pin.elf",
+        author: "idlesauce",
+        projectSource: "https://github.com/idlesauce/ps5-remoteplay-get-pin",
+        binarySource: "https://github.com/idlesauce/ps5-remoteplay-get-pin/releases/tag/v0.1.1",
+        version: "0.1.1",
         toPort: 9021
     },
     {
