@@ -866,7 +866,7 @@ async function main(userlandRW, wkOnly = false) {
             is_elfldr_running = true;
         } else {
             await log("elfldr exited with non-zero code, port 9021 will likely not work", LogLevel.ERROR);
-            await new Promise(resolve => setTimeout(resolve, 500));
+            await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
         // const SOCK_NONBLOCK = 0x20000000; // for future reference, this is ignored if we're not jailbroken and explicitly setting it with fcntl returns SCE_KERNEL_ERROR_EACCES (at least on 4.03)
@@ -909,7 +909,7 @@ async function main(userlandRW, wkOnly = false) {
         var timeout_size = 0x10; // 16 bytes
         var timeout = p.malloc(timeout_size);
         p.write8(timeout, 0); // tv_sec
-        p.write8(timeout.add32(0x8), 500); // tv_usec - 500 us = 50 ms
+        p.write8(timeout.add32(0x8), 50000); // tv_usec - 50000 us = 50 ms
 
         await log("elf loader listening on port 9020", LogLevel.INFO);
     }
@@ -1179,7 +1179,7 @@ async function main(userlandRW, wkOnly = false) {
     });
 
     // await log("Done, switching to payloads screen...", LogLevel.INFO);
-    await new Promise(resolve => setTimeout(resolve, 50));
+    await new Promise(resolve => setTimeout(resolve, 300));
     await switchPage("payloads-view");
 
 
